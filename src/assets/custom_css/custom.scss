@@ -188,3 +188,1090 @@
   }
 
 */
+
+@font-face {
+  font-family: 'Noto Sans';
+  src: url('../fonts/Noto_Sans/NotoSans-Light.ttf') format('truetype');
+  font-style: normal;
+  font-weight: 300;
+}
+
+@font-face {
+  font-family: 'Noto Sans';
+  src: url('../fonts/Noto_Sans/NotoSans-LightItalic.ttf') format('truetype');
+  font-style: italic;
+  font-weight: 300;
+}
+
+@font-face {
+  font-family: 'Noto Sans';
+  src: url('../fonts/Noto_Sans/NotoSans-Regular.ttf') format('truetype');
+  font-style: normal;
+  font-weight: 400;
+}
+
+@font-face {
+  font-family: 'Noto Sans';
+  src: url('../fonts/Noto_Sans/NotoSans-Italic.ttf') format('truetype');
+  font-style: italic;
+  font-weight: 400;
+}
+
+@font-face {
+  font-family: 'Noto Sans';
+  src: url('../fonts/Noto_Sans/NotoSans-Medium.ttf') format('truetype');
+  font-style: normal;
+  font-weight: 500;
+}
+
+@font-face {
+  font-family: 'Noto Sans';
+  src: url('../fonts/Noto_Sans/NotoSans-MediumItalic.ttf') format('truetype');
+  font-style: italic;
+  font-weight: 500;
+}
+
+@font-face {
+  font-family: 'Noto Sans';
+  src: url('../fonts/Noto_Sans/NotoSans-SemiBold.ttf') format('truetype');
+  font-style: normal;
+  font-weight: 600;
+}
+
+@font-face {
+  font-family: 'Noto Sans';
+  src: url('../fonts/Noto_Sans/NotoSans-SemiBoldItalic.ttf') format('truetype');
+  font-style: italic;
+  font-weight: 600;
+}
+
+@font-face {
+  font-family: 'Noto Sans';
+  src: url('../fonts/Noto_Sans/NotoSans-Bold.ttf') format('truetype');
+  font-style: normal;
+  font-weight: 700;
+}
+
+@font-face {
+  font-family: 'Noto Sans';
+  src: url('../fonts/Noto_Sans/NotoSans-BoldItalic.ttf') format('truetype');
+  font-style: italic;
+  font-weight: 700;
+}
+
+
+@font-face {
+  font-family: 'Noto Sans Display';
+  src: url('../fonts/Noto_Sans_Display/static/NotoSansDisplay/NotoSansDisplay-Light.ttf') format('truetype');
+  font-style: normal;
+  font-weight: 300;
+}
+
+@font-face {
+  font-family: 'Noto Sans Display';
+  src: url('../fonts/Noto_Sans_Display/static/NotoSansDisplay/NotoSansDisplay-Regular.ttf') format('truetype');
+  font-style: normal;
+  font-weight: 400;
+}
+
+@font-face {
+  font-family: 'Noto Sans Display';
+  src: url('../fonts/Noto_Sans_Display/static/NotoSansDisplay/NotoSansDisplay-Medium.ttf') format('truetype');
+  font-style: normal;
+  font-weight: 500;
+}
+
+@font-face {
+  font-family: 'Noto Sans Display';
+  src: url('../fonts/Noto_Sans_Display/static/NotoSansDisplay/NotoSansDisplay-SemiBold.ttf') format('truetype');
+  font-style: normal;
+  font-weight: 600;
+}
+
+@font-face {
+  font-family: 'Noto Sans Display';
+  src: url('../fonts/Noto_Sans_Display/static/NotoSansDisplay/NotoSansDisplay-Bold.ttf') format('truetype');
+  font-style: normal;
+  font-weight: 700;
+}
+
+@font-face {
+  font-family: 'Noto Sans Display';
+  src: url('../fonts/Noto_Sans_Display/static/NotoSansDisplay/NotoSansDisplay-LightItalic.ttf') format('truetype');
+  font-style: italic;
+  font-weight: 300;
+}
+
+@font-face {
+  font-family: 'Noto Sans Display';
+  src: url('../fonts/Noto_Sans_Display/static/NotoSansDisplay/NotoSansDisplay-Italic.ttf') format('truetype');
+  font-style: italic;
+  font-weight: 400;
+}
+
+@font-face {
+  font-family: 'Noto Sans Display';
+  src: url('../fonts/Noto_Sans_Display/static/NotoSansDisplay/NotoSansDisplay-MediumItalic.ttf') format('truetype');
+  font-style: italic;
+  font-weight: 500;
+}
+
+@font-face {
+  font-family: 'Noto Sans Display';
+  src: url('../fonts/Noto_Sans_Display/static/NotoSansDisplay/NotoSansDisplay-SemiBoldItalic.ttf') format('truetype');
+  font-style: italic;
+  font-weight: 600;
+}
+
+// Override some CSS variables
+:root {
+  --primary-color:                    #61a6b4;
+  --primary-color-rgb:                97, 166, 180;
+  --primary-color-contrast:           #000;
+  --secondary-color:                  #9bc9d5;
+  --tertiary-color:                   #d1e6ec;
+  --default-link-color:               #004ba7;
+  --main-background-color:            #ecefef;
+  --text-area-background-color:       #fdfdfd;
+
+  --fab-button-secondary-background-color: var(--secondary-color);
+  --fab-button-secondary-icon-color:       var(--secondary-color-contrast);
+  --outline-button-color:                  #03594F;
+
+  --font-stack-tei:                "Noto Sans", sans-serif;
+  --font-stack-tei-editorial-note: "Noto Sans", sans-serif;
+}
+
+ion-app[class][class] {
+  --info-overlay-link-color:                     #80CDDB;
+  --pageBreakOriginal-color:                     #932a83;
+  --side-menu-description-text-color:            #474747;
+  --side-menu-collection-title-background-color: var(--tertiary-color);
+  --side-menu-back-button-background-color:      var(--secondary-color);
+  --side-menu-selected-background-color:         var(--tertiary-color);
+  --side-menu-selected-font-weight:              600;
+  --top-menu-button-filter:                      none;
+}
+
+// Project styles
+
+collection-side-menu ion-select.sort-select.sort-select:hover {
+  --background: transparent;
+}
+
+/* toc spans subtitle and text_two */
+collection-side-menu li a .subtitle, collection-side-menu li button .subtitle {
+  color: var(--toc-description-text-color);
+  display: block;
+  font-size: .95rem;
+  font-weight: 500;
+  line-height: 1.3;
+  margin-top: 5px;
+}
+
+ul[role=menu] li[role=menuitem] a .text_two, collection-side-menu li button .text_two {
+  color: var(--toc-description-text-color);
+  display: block;
+  font-size: .975rem;
+  font-weight: 500;
+  line-height: 1.3;
+  margin-top: 5px;
+}
+
+article.md_content.markdown p {
+  font-family: "Noto Sans", sans-serif;
+}
+
+article.md_content.markdown h1, article.md_content.markdown h2, article.md_content.markdown h3, article.md_content.markdown h4, article.md_content.markdown h5, article.md_content.markdown h6 {
+  font-family: "Noto Sans Display", sans-serif;
+  font-weight: 500;
+}
+
+article.md_content.markdown h1 {
+  text-transform: none;
+  font-variant: small-caps;
+}
+
+.markdown figcaption {
+  font-family: "Noto Sans", sans-serif;
+  font-size: 0.95rem;
+}
+
+page-about article.md_content.markdown + figure {
+  margin-top: 0;
+}
+
+b, strong {
+  font-weight: 600;
+}
+
+text-metadata h2 {
+  display: none;
+}
+
+.banner {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+
+  .title-wrapper {
+    display: flex;
+    flex-direction: column;
+    transform: none !important;
+    float: none !important;
+    width: auto !important;
+    top: initial !important;
+    left: initial !important;
+    text-align: center;
+    align-items: center;
+
+    h1.banner-title {
+      display: inline-block;
+    }
+  }
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: "Noto Sans Display", sans-serif;
+  font-weight: 600;
+}
+
+/* toc heading */
+.menu-header h2 {
+  font-weight: 600 !important;
+}
+
+/* UI headings etc. font sizes */
+
+top-menu ul li .side-title {
+  font-size: 1rem !important;
+}
+
+ion-popover.page-text-add-view-popover ion-chip {
+  font-size: 1.05rem !important;
+}
+
+div reading-text div.tei div.tei, div manuscripts div.tei {
+  padding-bottom: 0;
+}
+
+div.tei {
+  padding-bottom: 0;
+  font-family: "Noto Sans", sans-serif;
+}
+
+/* letters */
+reading-text div.tei div.opener, manuscripts div.tei.teiManuscript div.opener {
+  margin-bottom: 1.5em;
+}
+
+reading-text div.tei div.closer, manuscripts div.tei.teiManuscript div.closer {
+  margin-top: 1.5em;
+  margin-bottom: 1.5em;
+}
+
+reading-text div.tei div.postscript, manuscripts div.tei.teiManuscript div.postscript {
+  margin-top: 1.5em;
+  margin-bottom: 1.5em;
+}
+
+reading-text div.tei p.dateline, manuscripts div.tei.teiManuscript p.dateline {
+  text-align: right;
+  font-size: 0.8em;
+  margin-top: 0.5em;
+  margin-bottom: 0.5em;
+}
+
+reading-text div.tei p.address, manuscripts div.tei.teiManuscript p.address {
+  text-align: right;
+  font-size: 0.8em;
+  margin-top: 0;
+}
+
+reading-text div.tei p.salute, manuscripts div.tei.teiManuscript p.salute {
+  text-indent: 0 !important;
+  margin-top: 0;
+}
+
+reading-text div.tei p.signed, manuscripts div.tei.teiManuscript p.signed {
+  text-align: right;
+  font-style: italic;
+  margin-top: 0;
+}
+
+/* paragraphs */
+reading-text div.tei p, page-introduction div.tei div.introduction p, page-title div.tei div.title_page p {
+  font-size: 1em;
+  line-height: 1.6em;
+  text-indent: 1.25em;
+  margin-top: 0.9em;
+}
+
+page-title div.tei div.title_page p:first-of-type {
+  text-align: center;
+  font-size: 1.5em;
+  font-weight: 500;
+  margin-bottom: 2em !important;
+}
+
+page-title div.tei div.title_page p {
+  margin-bottom: 2em !important;
+}
+
+reading-text > div.teiContainer, manuscripts > div.teiContainer {
+  padding-bottom: 10vh;
+}
+
+manuscripts div.tei.teiManuscript p {
+  font-size: 1em;
+  line-height: 1.6em;
+  text-indent: 1.25em !important;
+  margin-top: 0.25em;
+}
+
+reading-text div.tei p.noIndent {
+  text-indent: 0;
+}
+
+reading-text div.tei p.right, manuscripts div.tei.teiManuscript p.right, page-introduction div.tei div.introduction p.right, page-title div.tei div.title_page p.right {
+  text-align: right;
+}
+
+reading-text div.tei p.center, manuscripts div.tei.teiManuscript p.center, page-introduction div.tei div.introduction p.center, page-title div.tei div.title_page p.center {
+  text-align: center;
+  text-indent: 0 !important;
+}
+
+reading-text div.tei p.motto, manuscripts div.tei.teiManuscript p.motto, page-introduction div.tei div.introduction p.motto, page-title div.tei div.title_page p.motto {
+  text-align: right;
+  font-style: italic;
+  font-size: 1.1em;
+  margin-top: 0.3em;
+}
+
+reading-text div.tei div.tei.poem p.motto, reading-text div.tei div.tei.poem p.subtitle {
+  text-align: left !important;
+  text-indent: 0 !important;
+}
+
+/* blockquotes */
+reading-text div.tei div.tei :not(.parIndent) + .parIndent, manuscripts div.tei.teiManuscript div.tei.teiManuscript :not(.parIndent) + .parIndent, page-introduction div.tei div.introduction :not(.parIndent) + .parIndent {
+  text-indent: 0 !important;
+  padding-left: 2.5em;
+  padding-right: 2.5em;
+  margin-top: 1em !important;
+}
+
+reading-text div.tei div.tei .parIndent, reading-text div.tei div.tei .parIndent + span.pb_orig + .parIndent, manuscripts div.tei.teiManuscript div.tei.teiManuscript .parIndent, manuscripts div.tei.teiManuscript div.tei.teiManuscript .parIndent + span.pb_orig + .parIndent, page-introduction div.tei div.introduction .parIndent{
+  text-indent: 0 !important;
+  padding-left: 2.5em;
+  padding-right: 2.5em;
+  margin-top: 0.25em !important;
+}
+
+/* reading text with spaced body text p */
+reading-text div.tei p.spaced, page-introduction div.tei div.introduction p.spaced, page-title div.tei div.title_page p.spaced {
+  text-indent: 0 !important;
+  margin-top: 0.9em;
+  margin-bottom: 0.9em;
+}
+
+/* bibliography in introductions */
+page-introduction div.tei div.introduction p.spaced.hangingIndent {
+  padding-left: 30px !important;
+  text-indent: -30px !important;
+  margin-top: 0.4em;
+  margin-bottom: 0.4em;
+}
+
+/* poems */
+reading-text div.tei p.lg, page-introduction div.tei div.introduction p.lg {
+  text-indent: 0;
+  margin-top: 1em;
+  margin-bottom: 1em;
+}
+
+manuscripts div.tei.teiManuscript p.lg {
+  text-indent: 1.25em !important;
+  margin-top: 1em;
+  margin-bottom: 1em;
+}
+
+reading-text div.tei span.l, manuscripts div.tei.teiManuscript span.l, page-introduction div.tei div.introduction span.l {
+  text-indent: 0;
+}
+
+/* manuscript features */
+manuscripts div.tei.teiManuscript span.add {
+  vertical-align: super;
+  color: #7000F0;
+}
+
+manuscripts div.tei.teiManuscript span.add.moved {
+  vertical-align: unset;
+}
+
+manuscripts div.tei.teiManuscript span.add.later {
+  vertical-align: super;
+  color: #AD005C;
+}
+
+manuscripts div.tei.teiManuscript span.add.marginalia {
+  vertical-align: super;
+  color: #7000F0;
+  border-style: inset;
+}
+
+reading-text div.tei span.add.marginalia {
+  border-style: inset;
+}
+
+/* headings */
+
+reading-text div.tei h3.tei, reading-text div.tei h4.tei, reading-text div.tei h5.tei, reading-text div.tei h6.tei, reading-text div.tei p.tei.subtitle, reading-text div.tei p.tei.motto, reading-text div.tei p.tei.list_header, manuscripts div.tei.teiManuscript h3.tei, manuscripts div.tei.teiManuscript h4.tei, manuscripts div.tei.teiManuscript h5.tei, manuscripts div.tei.teiManuscript h6.tei, manuscripts div.tei.teiManuscript p.tei.subtitle, manuscripts div.tei.teiManuscript p.tei.motto, manuscripts div.tei.teiManuscript p.tei.list_header, page-introduction div.tei div.introduction h1, page-introduction div.tei div.introduction h2, page-introduction div.tei div.introduction h3, page-introduction div.tei div.introduction h4, page-introduction div.tei div.introduction h5, page-introduction div.tei div.introduction h6, page-introduction div.tei div.introduction p.subtitle, page-introduction div.tei div.introduction p.motto, page-introduction div.tei div.introduction p.list_header, page-title div.tei div.title_page h1, page-title div.tei div.title_page h2, page-title div.tei div.title_page h3, page-title div.tei div.title_page h4, page-title div.tei div.title_page h5, page-title div.tei div.title_page h6, page-title div.tei div.title_page p.subtitle, page-title div.tei div.title_page p.motto, page-title div.tei div.title_page p.subtitle p.list.header {
+  font-family: "Noto Sans Display", sans-serif;
+}
+
+reading-text div.tei h3.tei.title, page-introduction div.tei div.introduction h1.title, page-title div.tei div.title_page h1.title {
+  font-variant: small-caps !important;
+  text-align: center;
+  text-transform: none;
+  font-weight: 400 !important;
+  font-size: 1.6em;
+  margin-bottom: 0;
+  margin-top: 0.2em;
+  line-height: 1.25;
+}
+
+page-title div.tei div.title_page h1.title {
+  margin-bottom: 2em !important;
+}
+
+reading-text div.tei div.tei.poem h3.tei.title {
+  font-variant: small-caps !important;
+  text-align: left;
+  text-transform: none;
+  font-weight: 400 !important;
+  font-size: 1.6em;
+  margin-bottom: 0;
+  margin-top: 0.2em;
+}
+
+manuscripts div.tei.teiManuscript h3.tei.title {
+  font-variant: normal !important;
+  text-align: left;
+  font-weight: 500 !important;
+  font-size: 1.45em;
+  margin-bottom: 0;
+  margin-top: 0.2em;
+}
+
+reading-text div.tei h3.tei.title + p.tei.subtitle, page-introduction div.tei div.introduction h1.title + p.subtitle, page-title div.tei div.title_page h1.title + p.subtitle {
+  text-align: center;
+  font-style: italic;
+  font-weight: 400;
+  font-size: 1.2em !important;
+  margin-top: 0.4em;
+  margin-bottom: 0.5em;
+  text-indent: 0 !important;
+  line-height: 1.25em;
+}
+
+reading-text div.tei div.tei.poem h3.tei.title + p.tei.subtitle {
+  text-align: left;
+  font-style: italic;
+  font-weight: 400;
+  font-size: 1.2em !important;
+  margin-top: 0.4em;
+  margin-bottom: 0.5em;
+  text-indent: 0 !important;
+  line-height: 1.25em;
+}
+
+manuscripts div.tei.teiManuscript h3.tei.title + p.tei.subtitle {
+  text-align: left;
+  font-weight: 400;
+  font-size: 1.25em !important;
+  margin-top: 0.3em !important;
+  margin-bottom: 0.5em;
+  text-indent: 0 !important;
+  line-height: 1.25em;
+}
+
+reading-text div.tei h3.tei.title + h4.tei, manuscripts div.tei.teiManuscript h3.tei.title + h4.tei, page-introduction div.tei div.introduction h1.title + h2, page-title div.tei div.title_page h1.title + h2 {
+  margin-top: 0.5em !important;
+}
+
+manuscripts div.tei.teiManuscript h3.tei.title + p {
+  margin-top: 0.65em !important;
+}
+
+reading-text div.tei h3.tei.title + div {
+  margin-top: 1em;
+}
+
+reading-text div.tei h4.tei.section, page-introduction div.tei div.introduction h2.section, page-title div.tei div.title_page h2.section {
+  text-align: center !important;
+  font-weight: 500 !important;
+  font-size: 1.55em !important;
+  margin-top: 1em !important;
+  margin-bottom: 0 !important;
+}
+
+manuscripts div.tei.teiManuscript h4.tei.section {
+  text-align: left !important;
+  font-weight: 500 !important;
+  font-size: 1.4em !important;
+  margin-top: 1em !important;
+  margin-bottom: 0.5em !important;
+}
+
+reading-text div.tei h4.tei.section + p.tei.subtitle, page-introduction div.tei div.introduction h2.section + p.subtitle, page-title div.tei div.title_page h2.section + p.subtitle {
+  text-align: center;
+  font-weight: 400;
+  font-size: 1.2em;
+  margin-top: 0.3em;
+  margin-bottom: 0.5em;
+  text-indent: 0 !important;
+  line-height: 1.25em;
+}
+
+manuscripts div.tei.teiManuscript h4.tei.section + p.tei.subtitle {
+  text-align: left;
+  font-weight: 400;
+  font-size: 1.25em;
+  margin-top: 0.3em;
+  margin-bottom: 0.5em;
+  text-indent: 0 !important;
+  line-height: 1.25em;
+}
+
+reading-text div.tei h4.tei.chapter, page-introduction div.tei div.introduction h2.chapter, page-title div.tei div.title_page h2.chapter {
+  text-align: center;
+  font-weight: 500;
+  font-size: 1.4em;
+  margin-top: 1em;
+  margin-bottom: 0;
+}
+
+reading-text div.tei div.tei.poem h4.tei.chapter {
+  text-align: left !important;
+}
+
+page-introduction div.tei div.introduction h2.chapter {
+  text-align: left !important;
+}
+
+manuscripts div.tei.teiManuscript h4.tei.chapter {
+  text-align: left;
+  font-weight: 500;
+  font-size: 1.35em;
+  margin-top: 1em !important;
+  margin-bottom: 0.5em !important;
+}
+
+reading-text div.tei h4.tei.chapter + p.tei.subtitle, page-introduction div.tei div.introduction h2.chapter + p.subtitle, page-title div.tei div.title_page h2.chapter + p.subtitle {
+  text-align: center;
+  font-style: italic;
+  font-weight: 400;
+  font-size: 1.2em;
+  margin-top: 0.3em;
+  margin-bottom: 0.5em;
+  text-indent: 0 !important;
+  line-height: 1.25em;
+}
+
+reading-text div.tei div.tei.poem h4.tei.chapter + p.tei.subtitle {
+  text-align: left !important;
+}
+
+page-introduction div.tei div.introduction h2.chapter + p.spaced.hangingIndent {
+  margin-top: 0.9em;
+}
+
+manuscripts div.tei.teiManuscript h4.tei.chapter + p.tei.subtitle {
+  text-align: left;
+  font-style: italic;
+  font-weight: 400;
+  font-size: 1.2em;
+  margin-top: 0.3em !important;
+  margin-bottom: 0.5em !important;
+  text-indent: 0 !important;
+  line-height: 1.25em;
+}
+
+manuscripts div.tei.teiManuscript h4.tei.chapter + p {
+  margin-top: 0.65em !important;
+}
+
+reading-text div.tei h5.tei.sub, page-title div.tei div.title_page h3.sub {
+  text-align: center;
+  font-weight: 500 !important;
+  font-size: 1.25em !important;
+  margin-top: 0.5em !important;
+  margin-bottom: 0 !important;
+}
+
+manuscripts div.tei.teiManuscript h5.tei.sub {
+  text-align: left;
+  font-weight: 500 !important;
+  font-size: 1.2em !important;
+  margin-top: 0.5em !important;
+  margin-bottom: 0 !important;
+}
+
+page-introduction div.tei div.introduction h3.sub {
+  text-align: left;
+  font-weight: 500 !important;
+  font-size: 1.2em !important;
+  margin-top: 0.5em !important;
+  margin-bottom: 0 !important;
+}
+
+reading-text div.tei h5.tei.sub + p.tei.subtitle, page-title div.tei div.title_page h3.sub + p.subtitle {
+  text-align: center;
+  font-style: italic;
+  font-weight: 400;
+  font-size: 1.1em;
+  margin-top: 0.3em;
+  margin-bottom: 0.5em;
+  text-indent: 0 !important;
+  line-height: 1.25em;
+}
+
+manuscripts div.tei.teiManuscript h5.tei.sub + p.tei.subtitle {
+  text-align: left;
+  font-style: italic;
+  font-weight: 400;
+  font-size: 1.1em;
+  margin-top: 0.3em !important;
+  margin-bottom: 0.5em !important;
+  text-indent: 0 !important;
+  line-height: 1.25em;
+}
+
+page-introduction div.tei div.introduction h3.sub + p.subtitle {
+  text-align: left;
+  font-style: italic;
+  font-weight: 400;
+  font-size: 1.1em;
+  margin-top: 0.3em;
+  margin-bottom: 0.5em;
+  text-indent: 0 !important;
+  line-height: 1.25em;
+}
+
+reading-text div.tei h6.tei.sub2, manuscripts div.tei.teiManuscript h6.tei.sub2, page-introduction div.tei div.introduction h4.sub2, page-title div.tei div.title_page h4.sub2 {
+  text-align: left;
+  font-weight: 500;
+  font-size: 1.1em !important;
+  margin-top: 0.5em !important;
+  margin-bottom: 0.4em !important;
+}
+
+reading-text div.tei h6.tei.sub2 + p.tei.subtitle, manuscripts div.tei.teiManuscript h6.tei.sub2 + p.tei.subtitle, page-introduction div.tei div.introduction h4.sub2 + p.subtitle, page-title div.tei div.title_page h4.sub2 + p.subtitle {
+  text-align: left;
+  font-weight: 400;
+  font-size: 1em;
+  margin-top: 0.3em;
+  margin-bottom: 0.5em;
+  text-indent: 0 !important;
+  line-height: 1.25em;
+}
+
+reading-text div.tei h6.tei.sub3, manuscripts div.tei.teiManuscript h6.tei.sub3, page-introduction div.tei div.introduction h5.sub3, page-title div.tei div.title_page h5.sub3 {
+  text-align: left;
+  font-weight: 400;
+  font-size: 1.1em !important;
+  margin-top: 0.5em !important;
+  margin-bottom: 0.4em !important;
+}
+
+/* tables */
+
+div.tei table {
+  border: 1px solid;
+  border-color: #ddd;
+}
+
+page-title div.title_page div.table-wrapper table {
+  border: none;
+}
+
+div.tei div.table-wrapper {
+  margin-bottom: 1.25em;
+}
+
+div.tei div.table-wrapper table caption {
+  text-align: left;
+  margin: 0 0 0.5em;
+  width: 100%;
+  overflow-wrap: normal;
+  font-weight: 600;
+}
+
+/* tables in ms column */
+manuscripts div.tei.teiManuscript div.tei .table-wrapper {
+  margin-top: 1.25em;
+}
+
+div.tei td, div.tei th {
+  padding: 0.25em 1em 0.25em 0.25em;
+  vertical-align: top;
+  text-align: left;
+}
+
+div.tei td:last-child, div.tei th:last-child {
+  padding-right: 0.25em;
+}
+
+reading-text div.tei th, reading-text div.tei td, manuscripts div.tei.teiManuscript th, manuscripts div.tei.teiManuscript td {
+  border-bottom: 1px solid #ddd;
+}
+
+reading-text div.tei td.right, ms td.right, manuscripts div.tei.teiManuscript td.right, ms td.right {
+  text-align: right;
+}
+
+page-title div.title_page div.table-wrapper th, page-title div.title_page div.table-wrapper td {
+  border-bottom: none;
+  padding-left: 0;
+}
+
+page-title div.title_page div.table-wrapper td:last-child {
+  vertical-align: bottom;
+}
+
+/* the hansard texts have different sections*/
+
+reading-text div.tei div.tei.written {
+  /*background-color: #f0f2f5;*/
+  border: 1px solid black;
+}
+
+reading-text div.tei div.tei.LM_written {
+  background-color: #dbecf0;
+  border: 1px solid black;
+}
+
+reading-text div.tei div.tei.written p.spaced, reading-text div.tei div.tei.LM_written p.spaced, reading-text div.tei div.tei.discussion p.spaced, reading-text div.tei div.tei.LM_discussion p.spaced {
+  padding-left: 1em;
+  padding-right: 1em;
+}
+
+/*
+reading-text div.tei div.tei.discussion {
+    background-color: #fbfbbd;
+    border: 1px solid black;
+}
+*/
+
+reading-text div.tei div.tei.LM_discussion {
+  background-color: #ebf6c3;
+  border: 1px solid black;
+}
+
+/* slightly bolder number in page break */
+div.tei.show_pageBreakOriginal .pb_orig {
+  font-weight: 600;
+}
+
+/* textual features */
+
+/* extra space between two paragraphs */
+hr.tei.space {
+  border: none;
+  margin-top: 1.8em;
+}
+
+reading-text div.tei em.uppercase, manuscripts div.tei.teiManuscript em.uppercase, page-introduction div.tei div.introduction em.uppercase, page-title div.tei div.title_page em.uppercase {
+  font-variant: small-caps;
+  text-transform: none;
+  font-style: normal;
+  font-size: 1.15em;
+}
+
+div.tei em.tei.bold {
+  font-style: normal;
+}
+
+/* footnote list */
+div.tei ol.footnotesList li.footnoteItem a.footnoteReference {
+  display: inline;
+}
+
+/* footnote list */
+div.tei ol.footnotesList li.footnoteItem::before {
+  content: none;
+}
+
+/* header for footnote list */
+reading-text div.tei section[role=doc-endnotes] > p, manuscripts div.tei.teiManuscript section[role=doc-endnotes] > p, page-introduction div.tei div.introduction section[role=doc-endnotes] > p {
+  font-variant: small-caps;
+  text-indent: 0 !important;
+  font-size: 1.2em;
+  font-weight: 600;
+}
+
+/* no indent for p in a footnote list in ms column*/
+manuscripts div.tei.teiManuscript section[role=doc-endnotes] > ol > li > p {
+  text-indent: 0 !important;
+}
+
+/* footnote symbol in text */
+reading-text div.tei span.footnoteindicator, manuscripts div.tei.teiManuscript span.footnoteindicator, page-introduction div.tei div.introduction span.footnoteindicator {
+  color: var(--default-link-color);
+  font-size: 0.9em;
+  font-weight: 500;
+}
+
+/* lists, tables */
+reading-text div.tei ul li, manuscripts div.tei.teiManuscript ul li, page-introduction div.tei div.introduction ul li, page-title div.tei div.title_page ul li {
+  list-style-type: none;
+  margin-bottom: 0.45em;
+}
+
+/* settings-button etc. */
+ion-toolbar.secondary .secondary-toolbar-buttons-wrapper ion-button .side-title {
+  font-size: .7rem !important;
+}
+
+ul[role=menu] li[role=menuitem] {
+  a {
+    .text_two {
+      color: var(--toc-description-text-color);
+      display: block;
+      font-size: .875rem;
+      font-weight: normal;
+      line-height: 1.3;
+      margin-top: 5px;
+    }
+  }
+}
+
+.text-select-wrapper.facsimile-header {
+  display: inline;
+}
+
+ion-button.button.custom-button, ion-button.button.custom-outline-button, ion-button.button.circular-icon-button {
+  font-size: 0.9rem;
+  font-weight: 600;
+}
+
+/* manuscript column, "Teckenförklaringar" */
+manuscripts div.text-select-wrapper div.flex-buttons ion-button {
+  display: none;
+}
+
+/*show certain emendations using span.editorial (supplied type="editorial"), in reading text after show_emendations is activated, in ms all the time*/
+.tei.show_emendations span.corr, .tei.show_emendations span.editorial, manuscripts div.tei span.teiManuscript.editorial {
+  background-color: var(--emendations-color);
+  cursor: pointer;
+}
+
+/* frontpage */
+
+h1.banner-title {
+  display: none;
+}
+
+p.banner-subtitle {
+  display: none;
+}
+
+div.pro-lege-logo {
+  margin-top: 0.3rem;
+  margin-bottom: 0.6rem;
+  height: 52px;
+  width: 100%;
+  overflow: hidden;
+  position: relative;
+}
+
+div.pro-lege-logo img {
+	max-width: initial;
+	height: 100%;
+	position: absolute;
+	top: 0;
+	right: 50%;
+	transform: translate(50%,0);
+}
+
+/* frontpage texts */
+
+.text-content .site-presentation {
+  width: 100%;
+}
+
+div.site-presentation div.row {
+  display: flex;
+  flex-flow: row wrap;
+  align-items: flex-start;
+  justify-content: center;
+  gap: 12px;
+}
+
+div.site-presentation div.row div.column {
+  margin: 0;
+  flex: 1 1 400px;
+}
+
+div.site-presentation p {
+  font-family: "Noto Sans", sans-serif;
+  border-right: 1px solid black;
+  border-left: 1px solid black;
+  margin-bottom: 0;
+  padding: 0 25px;
+
+  & + p {
+    padding-top: 0.6rem !important;
+    margin-top: 0 !important;
+  }
+}
+
+div.site-presentation h1 {
+  font-weight: 300;
+  text-align: center;  
+  text-transform: none;
+  font-size: 2.7rem;
+  padding-top: 0.5rem;
+  margin-bottom: 0;
+  font-family: "Noto Sans Display", sans-serif;
+  display: none;
+}
+
+div.site-presentation h2 {
+  font-weight: 300;
+  text-transform: none;
+  font-size: 2.5rem;
+  padding-bottom: 0.2rem;
+  font-family: "Noto Sans Display", sans-serif;
+}
+
+/* Leo Mechelin's name as logo image on top of the frontpage image */
+.banner img.custom-logo {
+  height: 90px;
+  position: relative;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+img.facsimile-only {
+  height: 25px;
+  width: 25px;
+}
+
+.index-container .alphabet-filter ion-fab-button {
+  font-size: 1.5em !important;
+}
+
+/* index of persons */
+page-index {
+    font-family: "Noto Sans", serif;
+}
+
+div.main-content page-index h1.page-title {
+  font-weight: 500;
+  text-transform: none;
+  font-variant: small-caps;
+}
+
+.text-content .footer {
+  max-width: 100% !important;
+}
+
+page-home footer .partners {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: center;
+  align-items: center;
+  align-content: center;
+  gap: 40px;
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  width: 100%;
+
+  li {
+      margin: 0;
+      padding: 0;
+
+      img {
+          width: auto;
+          max-width: 100%;
+      }
+  }
+}
+
+summary {
+  cursor: pointer;
+  color: var(--default-link-color);
+  font-weight: bold;
+  margin: -0.5em -0.5em 0;
+  padding: 0.5em;
+}
+
+details {
+  padding: 0.5em 0.5em 0;
+}
+
+/* Don't show "no URN" and "hänvisa till denna lästext" messages */
+modal-reference-data .urn, modal-reference-data .rd-wrapper h3 {
+  display: none;
+}
+
+.sd-wrapper .sd-box p {
+  font-family: "Noto Sans", serif;
+}
+
+/* radio buttons and their texts */
+
+ion-alert.custom-select-alert .alert-wrapper button.alert-radio-button[aria-checked="true"] .alert-radio-label {
+  color: #035E53;
+}
+
+ion-alert.custom-select-alert .alert-wrapper button.alert-radio-button[aria-checked="true"] .alert-radio-inner {
+	background-color: #035E53;
+}
+
+ion-alert.custom-select-alert .alert-wrapper button.alert-radio-button[aria-checked="true"] .alert-radio-icon {
+	border-color: #035E53;
+}
+
+ion-alert.custom-select-alert .alert-wrapper .alert-button-group .alert-button {
+	color: #035E53;
+  font-weight: 600;
+}
+
+ion-button.text-button.selected-font-size {
+  color: #000;
+}
+
+page-content h1.page-title {
+  font-weight: 500 !important;
+  text-transform: none !important;
+  font-variant: small-caps;
+}
+
+/* order for license & instructions when downloading texts */
+modal-download-texts {
+  .notice {
+        .download-instructions {
+              order: 1;
+        }
+        .copyright-notice {
+              order: 0;
+        }
+  }
+}
+
+.markdown.download-instructions + p {
+  margin-top: 0.2rem;
+  margin-bottom: 0.5rem;
+}
+
+/* collection menu header with collection name */
+.menu-header h2 {
+  border-bottom: 3px solid var(--side-menu-divider-color);
+}

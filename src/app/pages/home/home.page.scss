@@ -2,6 +2,24 @@
 
 :host {
 	font-size: 1.125rem;
+  .row {
+    display: flex;
+    flex-direction: row;
+    position: relative;
+    height:100%;
+    align-items: stretch;
+    .column {
+      width: 50%;
+      padding-left: 25px;
+      padding-right: 25px;
+      margin: 4px;
+      border-left: 1px solid black;
+      border-right: 1px solid black;
+      ::ng-deep p {
+        line-height: 1.8rem;
+      }
+    }
+  }
 }
 
 ion-content::part(scroll) {
@@ -135,7 +153,18 @@ ion-content.portrait-mode::part(scroll) {
 			margin: 0 0 3rem 0;
 			text-align: left;
 		}
+	}
+}
 
+/* Override the number of columns in the edition list to 1, 2 or max 3
+	based on screen width in portrait mode. Both [col-xxl-3] and [col-xl-3]
+	are needed as selectors as one is for desktop, the other tablet. */
+@media only screen and (min-width: 0) {
+	.portrait-mode .text-content .front-page-edition-list [col-xxl-3],
+	.portrait-mode .text-content .front-page-edition-list [col-xl-3] {
+		flex: 0 0 100%;
+		width: 100%;
+		max-width: 100%;
 		.footer {
 			margin-left: 0;
 			margin-right: 0;

@@ -21,7 +21,7 @@
     <unit id="BasicActions.DontShowAgain">
       <segment state="initial">
         <source>Visa inte igen</source>
-        <target>Visa inte igen</target>
+        <target>Älä näytä uudelleen</target>
       </segment>
     </unit>
     <unit id="BasicActions.Download">
@@ -123,7 +123,7 @@
     <unit id="CollectionSideMenu.SortOptions.Categorical">
       <segment state="initial">
         <source>Kategorivis</source>
-        <target>Kategorioittain</target>
+        <target>Dokumenttityypin mukaan</target>
       </segment>
     </unit>
     <unit id="CollectionSideMenu.SortOptions.Chronological">
@@ -440,8 +440,8 @@
     </unit>
     <unit id="DownloadTexts.OpenPrintError">
       <segment state="initial">
-        <source>Utskriftsversionen kunde inte öppnas i ett nytt fönster. Vänligen försök igen och tillåt popup-fönster för webbplatsen.</source>
-        <target>Tekstin tulostusversiota ei pystytty avaamaan uuteen ikkunaan. Yritä uudelleen ja salli popup-ikkunat verkkosivustolta.</target>
+        <source>Utskriftsversionen kunde inte öppnas i ett nytt fönster. Vänligen försök igen och tillåt popup-fönster från webbplatsen.</source>
+        <target>Tekstin tulostusversiota ei pystytty avaamaan uuteen ikkunaan. Salli popup-ikkunat verkkosivustolta ja yritä uudelleen.</target>
       </segment>
     </unit>
     <unit id="DownloadTexts.Source">
@@ -452,8 +452,8 @@
     </unit>
     <unit id="DownloadTexts.TextLoadingError">
       <segment state="initial">
-        <source>Nedladdningen misslyckades. Vänligen försök igen och tillåt popup-fönster för webbplatsen.</source>
-        <target>Lataus epäonnistui. Yritä uudelleen ja salli popup-ikkunat verkkosivustolta.</target>
+        <source>Nedladdningen misslyckades. Vänligen försök igen och tillåt popup-fönster från webbplatsen.</source>
+        <target>Lataus epäonnistui. Salli popup-ikkunat verkkosivustolta ja yritä uudelleen.</target>
       </segment>
     </unit>
     <unit id="Ebook.InvalidFilename">
@@ -651,7 +651,7 @@
     <unit id="Epub.NoticeMessage">
       <segment state="initial">
         <source>Det här är en e-bok i epubformat som visas på webbsidan med hjälp av ett inbyggt läsprogram. Läsprogrammet fungerar bäst om din webbläsare är Firefox. I Chrome, Edge och Safari fungerar inte e-böckers länkar i läsprogrammet. Vi rekommenderar därför att du använder Firefox, eller laddar ner e-boken och läser den med ett läsprogram på din apparat.</source>
-        <target>Tämä on epub-muodossa oleva sähkökirja, jota näytetään verkkosivustolla sisäänrakennetun lukuohjelman avulla. Lukuohjelma toimii parhaiten Firefox-selaimessa. Chrome, Edge ja Safari-selaimissa sähkökirjojen linkit eivät toimi lukuohjelmassa. Suosittelemme siksi, että käytät Firefoxia, tai lataat sähkökirjan ja luet sitä omalla laitteellasi, valitsemallasi lukuohjelmalla.</target>
+        <target>Tämä on epub-muodossa oleva sähkökirja, jota näytetään verkkosivustolla sisäänrakennetun lukuohjelman avulla. Lukuohjelma toimii parhaiten Firefox-selaimessa. Chrome-, Edge- ja Safari-selaimissa sähkökirjojen linkit eivät toimi lukuohjelmassa. Suosittelemme siksi, että käytät Firefoxia, tai lataat sähkökirjan ja luet sitä omalla laitteellasi, valitsemallasi lukuohjelmalla.</target>
       </segment>
     </unit>
     <unit id="Facsimiles.AltText">
@@ -663,25 +663,25 @@
     <unit id="Facsimiles.ChangeFacsimile">
       <segment state="initial">
         <source>Byt faksimil</source>
-        <target>Vaihda faksimilea</target>
+        <target>Vaihda kuvat</target>
       </segment>
     </unit>
     <unit id="Facsimiles.Error">
       <segment state="initial">
         <source>Ett fel har uppstått. Faksimil kunde inte hämtas.</source>
-        <target>Tapahtui virhe. Faksimileja ei voitu ladata.</target>
+        <target>Tapahtui virhe. Kuvia ei voitu ladata.</target>
       </segment>
     </unit>
     <unit id="Facsimiles.ExternalFacsimiles">
       <segment state="initial">
         <source>Externa faksimil</source>
-        <target>Ulkopuoliset faksimilet</target>
+        <target>Linkki toiselle sivustolle</target>
       </segment>
     </unit>
     <unit id="Facsimiles.Facsimile">
       <segment state="initial">
         <source>Faksimil</source>
-        <target>Faksimile</target>
+        <target>Dokumentti kuvana</target>
       </segment>
     </unit>
     <unit id="Facsimiles.Fullscreen">
@@ -705,7 +705,7 @@
     <unit id="Facsimiles.None">
       <segment state="initial">
         <source>Inga faksimil tillgängliga.</source>
-        <target>Faksimileja ei ole saatavilla.</target>
+        <target>Kuvia ei ole saatavilla.</target>
       </segment>
     </unit>
     <unit id="Facsimiles.Previous">
@@ -729,13 +729,13 @@
     <unit id="Facsimiles.SelectFacsDialogSubtitle">
       <segment state="initial">
         <source>Faksimilet ersätter det faksimil som visas i kolumnen där du klickade.</source>
-        <target>Valittu faksimile korvaa sarakkeen faksimilen.</target>
+        <target>Valitut kuvat korvaavat sarakkeen nykyiset kuvat.</target>
       </segment>
     </unit>
     <unit id="Facsimiles.SelectFacsDialogTitle">
       <segment state="initial">
         <source>Välj faksimil</source>
-        <target>Valitse faksimile</target>
+        <target>Valitse kuvat</target>
       </segment>
     </unit>
     <unit id="Facsimiles.ZoomIn">
@@ -987,19 +987,19 @@
     <unit id="Manuscripts.Error">
       <segment state="initial">
         <source>Ett fel har uppstått. Manuskript kunde inte hämtas.</source>
-        <target>Käsikirjoitusten lataus epäonnistui.</target>
+        <target>Transkription lataus epäonnistui.</target>
       </segment>
     </unit>
     <unit id="Manuscripts.Manuscript">
       <segment state="initial">
         <source>Manuskript</source>
-        <target>Käsikirjoitus</target>
+        <target>Alkuperäinen (transkriptio)</target>
       </segment>
     </unit>
     <unit id="Manuscripts.None">
       <segment state="initial">
         <source>Inga manuskriptutskrifter.</source>
-        <target>Ei transkriboituja käsikirjoituksia.</target>
+        <target>Ei transkriboitua tekstiä, ks. kuva.</target>
       </segment>
     </unit>
     <unit id="Manuscripts.SelectMsDialogSubtitle">
@@ -1011,7 +1011,7 @@
     <unit id="Manuscripts.SelectMsDialogTitle">
       <segment state="initial">
         <source>Välj manuskript</source>
-        <target>Valitse käsikirjoitus</target>
+        <target>Valitse transkriptio</target>
       </segment>
     </unit>
     <unit id="Manuscripts.ShowNormalized">
@@ -1083,7 +1083,7 @@
     <unit id="Metadata.ArchiveInfo">
       <segment state="initial">
         <source>Arkivkälla för faksimilet</source>
-        <target>Faksimilen aineistotiedot</target>
+        <target>Aineistotiedot</target>
       </segment>
     </unit>
     <unit id="Metadata.Author">
@@ -1107,7 +1107,7 @@
     <unit id="Metadata.ExternalUrl">
       <segment state="initial">
         <source>Extern länk för faksimilet</source>
-        <target>Faksimilen linkki</target>
+        <target>Linkki ulkoiseen palveluun</target>
       </segment>
     </unit>
     <unit id="Metadata.Facsimile">
@@ -1125,7 +1125,7 @@
     <unit id="Metadata.FacsimileTitle">
       <segment state="initial">
         <source>Faksimilets titel</source>
-        <target>Faksimilen nimi</target>
+        <target>Nimi</target>
       </segment>
     </unit>
     <unit id="Metadata.ImageNumberInfo">
@@ -1137,13 +1137,13 @@
     <unit id="Metadata.Metadata">
       <segment state="initial">
         <source>Metadata</source>
-        <target>Metadata</target>
+        <target>Metatiedot</target>
       </segment>
     </unit>
     <unit id="Metadata.None">
       <segment state="initial">
         <source>Ingen metadata tillgänglig.</source>
-        <target>Dokumentin metadata ei ole saatavilla.</target>
+        <target>Dokumentin metatiedot eivät ole saatavilla.</target>
       </segment>
     </unit>
     <unit id="Metadata.NumberOfImages">
@@ -1155,7 +1155,7 @@
     <unit id="Metadata.OriginalLanguage">
       <segment state="initial">
         <source>Originalspråk</source>
-        <target>Alkuperäiskieli</target>
+        <target>Alkuperäinen kieli</target>
       </segment>
     </unit>
     <unit id="Metadata.PublicationDate">
@@ -1251,7 +1251,7 @@
     <unit id="NamedEntity.Description">
       <segment state="initial">
         <source>Beskrivning</source>
-        <target>Beskrivning</target>
+        <target>Kuvaus</target>
       </segment>
     </unit>
     <unit id="NamedEntity.DownloadPDF">
@@ -1311,7 +1311,7 @@
     <unit id="NamedEntity.OccurrencesLowercase">
       <segment state="initial">
         <source>förekomster</source>
-        <target>esiitymää</target>
+        <target>esiintymää</target>
       </segment>
     </unit>
     <unit id="NamedEntity.Person">
@@ -1395,7 +1395,7 @@
     <unit id="ReadingText.Error">
       <segment state="initial">
         <source>Ett fel har uppstått. Lästexten kunde inte hämtas.</source>
-        <target>Lukutekstin lataus epäonnistui.</target>
+        <target>Tekstin lataus epäonnistui.</target>
       </segment>
     </unit>
     <unit id="ReadingText.FinnishText">
@@ -1407,13 +1407,13 @@
     <unit id="ReadingText.None">
       <segment state="initial">
         <source>Det finns ingen utskriven lästext, se faksimil.</source>
-        <target>Lukutekstiä ei ole, katso faksimile.</target>
+        <target>Tekstiä ei ole, ks. kuva tai transkriptio.</target>
       </segment>
     </unit>
     <unit id="ReadingText.ReadingText">
       <segment state="initial">
         <source>Lästext</source>
-        <target>Lukuteksti</target>
+        <target>Teksti</target>
       </segment>
     </unit>
     <unit id="ReadingText.SwedishText">
@@ -1485,7 +1485,7 @@
     <unit id="Reference.ReferToReadingText">
       <segment state="initial">
         <source>Hänvisa till denna lästext</source>
-        <target>Lähdevittaus tähän lukutekstiin</target>
+        <target>Lähdevittaus tähän tekstiin</target>
       </segment>
     </unit>
     <unit id="Reference.ReferToThisPage">
@@ -1497,19 +1497,19 @@
     <unit id="Site.MetaDescription.Home">
       <segment state="initial">
         <source>En generell beskrivning av webbplatsen för sökmotorer.</source>
-        <target>Yleinen kuvaus sivustosta hakukoneita varten.</target>
+        <target>Digitaalinen arkisto Leo Mechelinin kirjoituksista.</target>
       </segment>
     </unit>
     <unit id="Site.Subtitle">
       <segment state="initial">
         <source>Webbplatsens undertitel</source>
-        <target>Sivuston alaotsikko</target>
+        <target>Pro lege – lain puolesta</target>
       </segment>
     </unit>
     <unit id="Site.Title">
       <segment state="initial">
         <source>Webbplatsens titel</source>
-        <target>Sivuston otsikko</target>
+        <target>Leo Mechelin</target>
       </segment>
     </unit>
     <unit id="TopMenu.About">
@@ -1701,7 +1701,7 @@
     <unit id="ViewOptions.PageBreakOriginal">
       <segment state="initial">
         <source>Sidnummer, original</source>
-        <target>Alkuteoksen sivunumerot</target>
+        <target>Alkuperäisen dokumentin sivunumerot</target>
       </segment>
     </unit>
     <unit id="ViewOptions.ParagraphNumbering">

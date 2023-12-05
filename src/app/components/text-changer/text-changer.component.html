@@ -2,11 +2,11 @@
   <div class="prev-wrapper">
     <button *ngIf="!firstItem" class="prev-button" (click)="previous()">
       <ion-icon name="arrow-back"></ion-icon>
-      <span *ngIf="!mobileMode" class="prev-text-name">{{ prevItemTitle }}</span>
+      <span *ngIf="!mobileMode" class="prev-text-name">{{ prevItemTitle }} {{prevItem?.text_two || ''}}</span>
     </button>
   </div>
   <div class="current-text-name">
-    <p>{{ currentItemTitle }}</p>
+    <p>{{ currentItem?.text }} {{currentItem?.text_two || ''}}</p>
   </div>
   <div class="next-wrapper">
     <button *ngIf="!lastItem" class="next-button" (click)="next()">

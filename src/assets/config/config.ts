@@ -2,192 +2,41 @@ type Config = { [key: string]: any }
 
 export const config: Config = {
   app: {
-    siteURLOrigin: "https://topelius.sls.fi",
-    projectNameDB: "topelius",
-    projectId: 10,
-    backendBaseURL: "https://testa-vonwright.sls.fi:8000/digitaledition",
-    alternateFacsimileBaseURL: "",
+    siteURLOrigin: "https://leomechelin.fi",
+    projectNameDB: "leomechelin",
+    projectId: 1,
+    backendBaseURL: "https://leomechelin.fi/api",
+    alternateFacsimileBaseURL: "https://leomechelin-facsimiles.storage.googleapis.com/facsimile_collection",
     i18n: {
       languages: [
         { code: "sv", label: "Svenska", region: "FI" },
         { code: "fi", label: "Suomi", region: "FI" }
       ],
       defaultLanguage: "sv",
-      multilingualCollectionTableOfContents: false,
-      multilingualReadingTextLanguages: [],
-      multilingualNamedEntityData: false
-    },
-    enableRouterLoadingBar: true,
-    openGraphMetaTags: {
-      enabled: true,
-      image: {
-        sv: {
-          altText: "alt-text",
-          URL: "assets/images/home-page-banner.jpg"
-        },
-        fi: {
-          altText: "alt-teksti",
-          URL: "assets/images/home-page-banner.jpg"
-        }
-      }
+      multilingualCollectionTableOfContents: true,
+      multilingualReadingTextLanguages: ["sv", "fi"],
+      multilingualNamedEntityData: true
     }
   },
   collections: {
-    enableLegacyIDs: true,
+    enableLegacyIDs: false,
     enableMathJax: false,
     firstTextItem: {
-      216: "216_20280", 219: "219_19443", 220: "220_20122",
-      218: "218_20230_ch2", 210: "210_20548_ch1", 208: "208_18466_ch4",
-      207: "207_18464_ch1", 214: "214_20240_ch1", 203: "203_20217_ch1",
-      213: "213_18465_ch1", 202: "202_18467_ch1", 199: "199_18284",
-      221: "221_21422", 206: "206_20212_ch1", 201: "201_18471",
-      211: "211_20128", 200: "200_19870", 205: "205_20227_ch1",
-      215: "215_20568", 217: "217_20559_ch1", 204: "204_20322",
-      212: "212_20323", 209: "209_20479"
+      1: "1_1199"
     },
     frontMatterPages: {
       cover: true,
       title: true,
-      foreword: true,
+      foreword: false,
       introduction: true
     },
-    highlightSearchMatches: true,
-    inlineIllustrations: [206],
-    mediaCollectionMappings: { 214: 44, 206: 19 },
     order: [
-      [216, 219, 220, 218, 210, 208, 207, 214, 203, 213,
-        202, 199, 221, 206, 201, 211, 200, 205, 215, 217,
-        204, 212, 209]
+      [1, 2, 3, 4, 5, 6, 7, 8, 9]
     ]
   },
-  ebooks: [
-    {
-      title: "Bröd och bot",
-      filename: "norrback-brod-och-bot.epub",
-      externalFileURL: "",
-      coverURL: "",
-      downloadOptions: [
-        {
-          url: "https://www.sls.fi/sv/utgivning/historiska-recept",
-          label: ""
-        }
-      ]
-    },
-    {
-      title: "Marriage Conditions in a Palestinian Village I (epub)",
-      filename: "marriage-conditions-1.epub",
-      externalFileURL: "https://api.sls.fi/digitaledition/granqvist/files/30/epub/30_11672_Marriage_Conditions_1.epub/",
-      coverURL: "",
-      downloadOptions: [
-        {
-          url: "https://api.sls.fi/digitaledition/granqvist/files/30/epub/30_11672_Marriage_Conditions_1.epub/",
-          label: "EPUB"
-        },
-        {
-          url: "https://api.sls.fi/digitaledition/granqvist/files/30/pdf/30_11672_Marriage_Conditions_1.pdf/",
-          label: "PDF"
-        }
-      ]
-    },
-    {
-      title: "Marriage Conditions in a Palestinian Village I (pdf)",
-      filename: "marriage-conditions-1.pdf",
-      externalFileURL: "https://api.sls.fi/digitaledition/granqvist/files/30/pdf/30_11672_Marriage_Conditions_1.pdf/",
-      coverURL: "",
-      downloadOptions: [
-        {
-          url: "https://api.sls.fi/digitaledition/granqvist/files/30/epub/30_11672_Marriage_Conditions_1.epub/",
-          label: "EPUB"
-        },
-        {
-          url: "https://api.sls.fi/digitaledition/granqvist/files/30/pdf/30_11672_Marriage_Conditions_1.pdf/",
-          label: "PDF"
-        }
-      ]
-    }
-  ],
   page: {
     about: {
       initialPageNode: "01-01"
-    },
-    elasticSearch: {
-      enableFilters: true,
-      enableSortOptions: true,
-      filterGroupsOpenByDefault: ["Years", "Type", "Genre", "Collection"],
-      hitsPerPage: 15,
-      indices: ["topelius"],
-      openReadingTextWithComments: false,
-      textHighlightFragmentSize: 150,
-      textHighlightType: "fvh",
-      textTitleHighlightType: "fvh",
-      typeFilterGroupOptions: ["est", "com", "var", "inl", "tit", "fore"],
-      fixedFilters: [
-        {
-          terms: {
-            deleted: ["0"]
-          }
-        },
-        {
-          terms: {
-            published: ["2"]
-          }
-        }
-      ],
-      additionalSourceFields: [],
-      aggregations: {
-        Years: {
-          date_histogram: {
-            field: "orig_date_sort",
-            calendar_interval: "year",
-            format: "yyyy"
-          }
-        },
-        Type: {
-          terms: {
-            field: "text_type",
-            size: 40,
-            order: {_key: "asc"}
-          }
-        },
-        Genre: {
-          terms: {
-            field: "publication_data.genre.keyword",
-            size: 40,
-            order: {_key: "asc"}
-          }
-        },
-        Collection: {
-          terms: {
-            field: "publication_data.collection_name.keyword",
-            size: 40,
-            order: {_key: "asc"}
-          }
-        },
-        LetterSenderName: {
-          terms: {
-            field: "sender_subject_name.keyword",
-            size: 100
-          }
-        },
-        LetterReceiverName: {
-          terms: {
-            field: "receiver_subject_name.keyword",
-            size: 100
-          }
-        },
-        LetterSenderLocation: {
-          terms: {
-            field: "sender_location_name.keyword",
-            size: 50
-          }
-        },
-        LetterReceiverLocation: {
-          terms: {
-            field: "receiver_location_name.keyword",
-            size: 50
-          }
-        }
-      }
     },
     foreword: {
       showURNButton: true,
@@ -196,88 +45,66 @@ export const config: Config = {
     home: {
       bannerImage: {
         altTexts: {
-          sv: "Porträtt av Zacharias Topelius",
-          fi: "Zacharias Topeliuksen muotokuva"
+          sv: "Kollage: Leo Mechelin fotograferad cirka 1900–1905. Som bakgrund Statsrådsborgen samt Mechelins manuskript till verket Précis du droit public du grand-duché de Finlande från 1886.",
+          fi: "Kollaasi: Leo Mechelin valokuvattuna noin 1900–1905. Taustalla Valtioneuvoston linna sekä Mechelinin käsikirjoitus teokseen Précis du droit public du grand-duché de Finlande vuodelta 1886."
         },
-        orientationPortrait: true,
-        URL: "assets/images/home-page-banner-portrait.jpg"
-      },
-      portraitOrientationSettings: {
-        imagePlacement: {
-          onRight: false,
-          squareCroppedVerticalOffset: "10%"
-        },
-        siteTitleOnImageOnSmallScreens: false
+        orientationPortrait: false,
+        URL: "../../assets/images/Leo_Mechelin.jpg"
       },
       showContentGrid: false,
       showFooter: true,
       showSearchbar: false
     },
     index: {
-      keywords: {
-        maxFetchSize: 500,
-        showFilter: true,
-        publishedStatus: 2
-      },
       persons: {
-        database: "elastic",
-        maxFetchSize: 500,
-        showFilter: true,
-        publishedStatus: 2
-      },
-      places: {
-        maxFetchSize: 500,
-        showFilter: true,
-        publishedStatus: 2
-      },
-      works: {
-        publishedStatus: 2
+        database: "default",
+        showFilter: false
       }
     },
     introduction: {
-      hasSeparateTOC: true,
-      showTextDownloadButton: true,
+      hasSeparateTOC: false,
       showURNButton: true,
       showViewOptionsButton: true,
+      showTextDownloadButton: true,
       viewOptions: {
-        personInfo: true,
+        personInfo: false,
         placeInfo: false,
-        workInfo: true,
-        paragraphNumbering: true,
-        pageBreakEdition: true
+        workInfo: false,
+        paragraphNumbering: false,
+        pageBreakEdition: false
       }
     },
     mediaCollection: {
       showURNButton: true
     },
     text: {
-      defaultViews: ["readingtext", "comments", "facsimiles"],
-      defaultViewOptions: ["comments"],
+      defaultViews: ["readingtext_sv", "readingtext_fi", "manuscripts", "facsimiles"],
+      defaultViewOptions: ["comments", "personInfo", "abbreviations"],
       showTextDownloadButton: true,
       showURNButton: true,
       showViewOptionsButton: true,
       viewOptions: {
         comments: true,
         personInfo: true,
-        placeInfo: true,
+        placeInfo: false,
         emendations: true,
-        normalisations: true,
-        workInfo: true,
+        normalisations: false,
+        workInfo: false,
         abbreviations: true,
-        paragraphNumbering: true,
+        paragraphNumbering: false,
         pageBreakOriginal: true,
-        pageBreakEdition: true
+        pageBreakEdition: false
       },
       viewTypes: {
         showAll: true,
         readingtext: true,
-        comments: true,
-        facsimiles: true,
         manuscripts: true,
-        variants: true,
-        illustrations: true,
-        legend: true,
-        metadata: false
+        comments: false,
+        facsimiles: true,
+        variants: false,
+        illustrations: false,
+        legend: false,
+        metadata: true
       }
     },
     title: {
@@ -288,20 +115,15 @@ export const config: Config = {
   },
   component: {
     collectionSideMenu: {
-      sortableCollectionsAlphabetical: ["211", "215", "219", "220"],
-      sortableCollectionsChronological: ["215", "219", "220"],
-      sortableCollectionsCategorical: [],
-      categoricalSortingPrimaryKey: "",
-      categoricalSortingSecondaryKey: ""
+      sortableCollectionsAlphabetical: [],
+      sortableCollectionsChronological: ["1", "2", "3", "4", "5", "6", "7", "8", "9"],
+      sortableCollectionsCategorical: ["1", "2", "3", "4", "5", "6", "7", "8", "9"],
+      categoricalSortingPrimaryKey: "genre",
+      categoricalSortingSecondaryKey: "date"
     },
     contentGrid: {
       includeEbooks: false,
       includeMediaCollection: false,
-      mediaCollectionCoverURL: "",
-      mediaCollectionCoverAltTexts: {
-        sv: "Alt-text",
-        fi: "Alt-teksti"
-      },
       showTitles: true
     },
     epub: {
@@ -310,45 +132,45 @@ export const config: Config = {
       showViewOptionsButton: true
     },
     facsimiles: {
-      imageQuality: 4,
-      showTitle: true
+      imageQuality: 1,
+      showTitle: false
     },
     mainSideMenu: {
       items: {
         home: false,
         about: true,
-        ebooks: true,
+        ebooks: false,
         collections: true,
-        mediaCollections: true,
+        mediaCollections: false,
         indexKeywords: false,
         indexPersons: true,
-        indexPlaces: true,
+        indexPlaces: false,
         indexWorks: false
       }
     },
     manuscripts: {
-      showTitle: true,
-      showOpenLegendButton: true
+      showOpenLegendButton: false,
+      showTitle: false
     },
     topMenu: {
       showAboutButton: true,
       showContentButton: true,
-      showElasticSearchButton: true,
+      showElasticSearchButton: false,
       showURNButton: false,
       showLanguageButton: true,
-      showSiteLogo: true,
+      showSiteLogo: false,
       siteLogoDefaultImageURL: "assets/images/logo.svg",
       siteLogoMobileImageURL: "assets/images/logo-mobile.svg",
-      siteLogoLinkURL: "https://www.sls.fi/"
+      siteLogoLinkURL: ""
     },
     variants: {
-      showOpenLegendButton: true
+      showOpenLegendButton: false
     }
   },
   modal: {
     downloadTexts: {
       introductionFormats: {
-        xml: true,
+        xml: false,
         html: false,
         xhtml: false,
         txt: false,
@@ -358,41 +180,26 @@ export const config: Config = {
         xml: true,
         html: false,
         xhtml: false,
-        txt: false,
-        print: true
-      },
-      commentsFormats: {
-        xml: true,
-        html: false,
-        xhtml: false,
-        txt: false,
+        txt: true,
         print: true
       },
       manuscriptsFormats: {
-        xml: false,
+        xml: true,
         html: false,
         xhtml: false,
-        txt: false,
+        txt: true,
         print: true
       }
     },
     fullscreenImageViewer: {
-      imageQuality: 4
+      imageQuality: 1
     },
     referenceData: {
       URNResolverURL: "https://urn.fi/",
     },
     namedEntity: {
-      showAliasAndPrevLastName: false,
-      showArticleData: false,
-      showCityRegionCountry: false,
-      showDescriptionLabel: false,
-      showGalleryOccurrences: false,
-      showMediaData: false,
-      showOccupation: false,
-      showOccurrences: true,
-      showType: false,
-      useSimpleWorkMetadata: true
+      showOccurrences: false,
+      useSimpleWorkMetadata: false
     }
   }
 }

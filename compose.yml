@@ -10,4 +10,4 @@ services:
       - "testa-vonwright.sls.fi:172.16.2.136"
     image: docker.io/slsfinland/digital_edition_web_ng:latest
     ports:
-      - 2089:4201
+      - 8080:4201

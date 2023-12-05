@@ -29,6 +29,7 @@ export class TextChangerComponent implements OnChanges, OnDestroy, OnInit {
   collectionHasForeword: boolean = false;
   collectionHasIntro: boolean = false;
   collectionId: string = '';
+  currentItem: any;
   currentItemTitle: string = '';
   firstItem?: boolean;
   flattened: Array<any> = [];
@@ -175,11 +176,7 @@ export class TextChangerComponent implements OnChanges, OnDestroy, OnInit {
       this.currentItemTitle = $localize`:@@CollectionForeword.Foreword:Förord`;
 
       this.lastItem = false;
-      if (this.collectionHasCover || this.collectionHasTitle) {
-        this.firstItem = false;
-      } else {
-        this.firstItem = true;
-      }
+      this.firstItem = !(this.collectionHasCover || this.collectionHasTitle);
 
       if (this.collectionHasTitle) {
         this.setPageTitleAsPrevious(this.collectionId);
@@ -198,11 +195,7 @@ export class TextChangerComponent implements OnChanges, OnDestroy, OnInit {
       this.currentItemTitle = $localize`:@@CollectionIntroduction.Introduction:Inledning`;
 
       this.lastItem = false;
-      if (this.collectionHasCover || this.collectionHasTitle || this.collectionHasForeword) {
-        this.firstItem = false;
-      } else {
-        this.firstItem = true;
-      }
+      this.firstItem = !(this.collectionHasCover || this.collectionHasTitle || this.collectionHasForeword);
 
       if (this.collectionHasForeword) {
         this.setPageForewordAsPrevious(this.collectionId);
@@ -464,11 +457,7 @@ export class TextChangerComponent implements OnChanges, OnDestroy, OnInit {
     }
 
     if (this.parentPageType === 'page-text') {
-      if (this.flattened[currentId] !== undefined) {
-        this.currentItemTitle = String(this.flattened[currentId].text);
-      } else {
-        this.currentItemTitle = '';
-      }
+      this.currentItem = this.flattened[currentId];
     }
     return currentItemFound;
   }

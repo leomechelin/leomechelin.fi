@@ -123,7 +123,7 @@
     <unit id="CollectionSideMenu.SortOptions.Categorical">
       <segment state="initial">
         <source>Kategorivis</source>
-        <target>Kategorivis</target>
+        <target>Enligt dokumenttyp</target>
       </segment>
     </unit>
     <unit id="CollectionSideMenu.SortOptions.Chronological">
@@ -141,7 +141,7 @@
     <unit id="CollectionSideMenu.SortOptions.SelectSorting">
       <segment state="initial">
         <source>Välj sortering för innehållsförteckningen</source>
-        <target>Välj sortering för innehållsförteckningen</target>
+        <target>Innehållsförteckningens sortering</target>
       </segment>
     </unit>
     <unit id="CollectionSideMenu.SortOptions.Sorting">
@@ -675,13 +675,13 @@
     <unit id="Facsimiles.ExternalFacsimiles">
       <segment state="initial">
         <source>Externa faksimil</source>
-        <target>Externa faksimil</target>
+        <target>Länk till externt faksimil</target>
       </segment>
     </unit>
     <unit id="Facsimiles.Facsimile">
       <segment state="initial">
         <source>Faksimil</source>
-        <target>Faksimil</target>
+        <target>Dokumentet i faksimil</target>
       </segment>
     </unit>
     <unit id="Facsimiles.Fullscreen">
@@ -729,7 +729,7 @@
     <unit id="Facsimiles.SelectFacsDialogSubtitle">
       <segment state="initial">
         <source>Faksimilet ersätter det faksimil som visas i kolumnen där du klickade.</source>
-        <target>Faksimilet ersätter det faksimil som visas i kolumnen där du klickade.</target>
+        <target>Faksimilet ersätter det nuvarande i kolumnen.</target>
       </segment>
     </unit>
     <unit id="Facsimiles.SelectFacsDialogTitle">
@@ -987,19 +987,19 @@
     <unit id="Manuscripts.Error">
       <segment state="initial">
         <source>Ett fel har uppstått. Manuskript kunde inte hämtas.</source>
-        <target>Ett fel har uppstått. Manuskript kunde inte hämtas.</target>
+        <target>Ett fel har uppstått. Transkriptionen kunde inte hämtas.</target>
       </segment>
     </unit>
     <unit id="Manuscripts.Manuscript">
       <segment state="initial">
         <source>Manuskript</source>
-        <target>Manuskript</target>
+        <target>Original (transkription)</target>
       </segment>
     </unit>
     <unit id="Manuscripts.None">
       <segment state="initial">
         <source>Inga manuskriptutskrifter.</source>
-        <target>Inga manuskriptutskrifter.</target>
+        <target>Ingen transkription, se faksimil.</target>
       </segment>
     </unit>
     <unit id="Manuscripts.SelectMsDialogSubtitle">
@@ -1011,7 +1011,7 @@
     <unit id="Manuscripts.SelectMsDialogTitle">
       <segment state="initial">
         <source>Välj manuskript</source>
-        <target>Välj manuskript</target>
+        <target>Välj transkription</target>
       </segment>
     </unit>
     <unit id="Manuscripts.ShowNormalized">
@@ -1083,7 +1083,7 @@
     <unit id="Metadata.ArchiveInfo">
       <segment state="initial">
         <source>Arkivkälla för faksimilet</source>
-        <target>Arkivkälla för faksimilet</target>
+        <target>Arkivkälla</target>
       </segment>
     </unit>
     <unit id="Metadata.Author">
@@ -1107,7 +1107,7 @@
     <unit id="Metadata.ExternalUrl">
       <segment state="initial">
         <source>Extern länk för faksimilet</source>
-        <target>Extern länk för faksimilet</target>
+        <target>Extern länk</target>
       </segment>
     </unit>
     <unit id="Metadata.Facsimile">
@@ -1125,7 +1125,7 @@
     <unit id="Metadata.FacsimileTitle">
       <segment state="initial">
         <source>Faksimilets titel</source>
-        <target>Faksimilets titel</target>
+        <target>Titel</target>
       </segment>
     </unit>
     <unit id="Metadata.ImageNumberInfo">
@@ -1179,7 +1179,7 @@
     <unit id="Metadata.PublishedBy">
       <segment state="initial">
         <source>Publicerat i</source>
-        <target>Publicerat i</target>
+        <target>Publicerat</target>
       </segment>
     </unit>
     <unit id="Metadata.Recipient">
@@ -1395,7 +1395,7 @@
     <unit id="ReadingText.Error">
       <segment state="initial">
         <source>Ett fel har uppstått. Lästexten kunde inte hämtas.</source>
-        <target>Ett fel har uppstått. Lästexten kunde inte hämtas.</target>
+        <target>Ett fel har uppstått. Texten kunde inte hämtas.</target>
       </segment>
     </unit>
     <unit id="ReadingText.FinnishText">
@@ -1407,13 +1407,13 @@
     <unit id="ReadingText.None">
       <segment state="initial">
         <source>Det finns ingen utskriven lästext, se faksimil.</source>
-        <target>Det finns ingen utskriven lästext, se faksimil.</target>
+        <target>Ingen text, se faksimil eller transkription.</target>
       </segment>
     </unit>
     <unit id="ReadingText.ReadingText">
       <segment state="initial">
         <source>Lästext</source>
-        <target>Lästext</target>
+        <target>Text</target>
       </segment>
     </unit>
     <unit id="ReadingText.SwedishText">
@@ -1485,7 +1485,7 @@
     <unit id="Reference.ReferToReadingText">
       <segment state="initial">
         <source>Hänvisa till denna lästext</source>
-        <target>Hänvisa till denna lästext</target>
+        <target>Hänvisa till denna text</target>
       </segment>
     </unit>
     <unit id="Reference.ReferToThisPage">
@@ -1497,25 +1497,25 @@
     <unit id="Site.MetaDescription.Home">
       <segment state="initial">
         <source>En generell beskrivning av webbplatsen för sökmotorer.</source>
-        <target>En generell beskrivning av webbplatsen för sökmotorer.</target>
+        <target>Ett digitalt arkiv innehållande Leo Mechelins texter.</target>
       </segment>
     </unit>
     <unit id="Site.Subtitle">
       <segment state="initial">
         <source>Webbplatsens undertitel</source>
-        <target>Webbplatsens undertitel</target>
+        <target>Pro lege – för lagen</target>
       </segment>
     </unit>
     <unit id="Site.Title">
       <segment state="initial">
         <source>Webbplatsens titel</source>
-        <target>Webbplatsens titel</target>
+        <target>Leo Mechelin</target>
       </segment>
     </unit>
     <unit id="TopMenu.About">
       <segment state="initial">
         <source>Om utgåvan</source>
-        <target>Om utgåvan</target>
+        <target>Om</target>
       </segment>
     </unit>
     <unit id="TopMenu.AriaLabel">
@@ -1653,13 +1653,13 @@
     <unit id="ViewOptions.ExplanatoryNote">
       <segment state="initial">
         <source>Punktkommentar</source>
-        <target>Punktkommentar</target>
+        <target>Kommentar</target>
       </segment>
     </unit>
     <unit id="ViewOptions.ExplanatoryNotes">
       <segment state="initial">
         <source>Punktkommentarer</source>
-        <target>Punktkommentarer</target>
+        <target>Kommentarer</target>
       </segment>
     </unit>
     <unit id="ViewOptions.ExplanatoryNotesAltText">
@@ -1701,7 +1701,7 @@
     <unit id="ViewOptions.PageBreakOriginal">
       <segment state="initial">
         <source>Sidnummer, original</source>
-        <target>Sidnummer, original</target>
+        <target>Sidnummer i originalet</target>
       </segment>
     </unit>
     <unit id="ViewOptions.ParagraphNumbering">

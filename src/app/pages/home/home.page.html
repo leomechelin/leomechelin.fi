@@ -11,10 +11,9 @@
     > </span>
 
     <div *ngIf="!imageOrientationPortrait || titleOnImage" class="title-wrapper">
-      <h1 class="banner-title" i18n="@@Site.Title">Webbplatsens titel</h1>
-
-      <p *ngIf="siteHasSubtitle" role="doc-subtitle" class="banner-subtitle" i18n="@@Site.Subtitle">Webbplatsens undertitel</p>
+      <img class="custom-logo" alt="Leo Mechelin logo" src="../../assets/images/Leo_Mechelin_logo.png">
     </div>
+
     <div *ngIf="imageOrientationPortrait" class="portrait-image-wrapper">
       <img loading="lazy"
             [src]="imageURL"
@@ -25,9 +24,8 @@
   </div>
 
   <div class="text-content">
-    <div *ngIf="imageOrientationPortrait" class="title-wrapper">
-      <h1 class="site-title" i18n="@@Site.Title">Webbplatsens titel</h1>
-      <p *ngIf="siteHasSubtitle" role="doc-subtitle" class="site-subtitle" i18n="@@Site.Subtitle">Webbplatsens undertitel</p>
+    <div class="site-presentation">
+      <div class="markdown" [innerHTML]="descriptionText$ | async"></div>
     </div>
 
     <div *ngIf="showSearchbar" class="search-bar-wrapper">
@@ -48,8 +46,6 @@
         <ion-icon slot="icon-only" name="search" aria-label="Sök" i18n-aria-label="@@BasicActions.Search"></ion-icon>
       </ion-button>
     </div>
-
-    <div class="site-presentation markdown" [innerHTML]="descriptionText$ | async"></div>
 
     <div *ngIf="showContentGrid" class="content-grid-wrapper">
       <content-grid></content-grid>

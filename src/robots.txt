@@ -1,2 +1,3 @@
 User-agent: *
 Disallow: /search
+Sitemap: https://leomechelin.fi/sitemap.txt

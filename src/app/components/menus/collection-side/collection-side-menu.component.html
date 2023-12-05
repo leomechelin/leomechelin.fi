@@ -66,7 +66,7 @@
 
 <ng-template #recursiveMenu let-list>
   <ng-container *ngFor="let item of list">
-    <li 
+    <li
           [attr.data-id]="item.itemId ? 'toc_' + item.itemId : ''"
           [attr.aria-current]="highlightedMenu === item.itemId ? 'page' : null"
           [attr.aria-haspopup]="item.children ? 'menu' : null"
@@ -99,8 +99,11 @@
 <ng-template #menuItemContent let-item>
     <span class="label">
       {{item.text}}
+      <span class="subtitle" *ngIf="item.subtitle">{{item.subtitle}}</span>
       <span class="description" *ngIf="item.description">{{item.description}}</span>
+      <span class="text_two" *ngIf="item.text_two">{{item.text_two}}</span>
     </span>
+    <img class="facsimile-only" src="../../../assets/images/img_placeholder.svg" *ngIf="item.facsimileOnly" alt="facsimile only"/>
     <ion-icon *ngIf="item.children" name="chevron-forward-outline" class="toggle-icon"
           [class.open]="selectedMenu.includes(item.itemId) || selectedMenu.includes(item.nodeId)"
     ></ion-icon>
