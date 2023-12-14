@@ -123,9 +123,6 @@
             "development": {
               "buildTarget": "app:build:development"
             },
-            "ci": {
-              "progress": false
-            },
             "fi": {
               "buildTarget": "app:build:development,fi"
             },
@@ -307,17 +304,8 @@
     }
   },
   "cli": {
-    "schematicCollections": [
-      "@ionic/angular-toolkit"
-    ],
     "analytics": false
   },
   "schematics": {
-    "@ionic/angular-toolkit:component": {
-      "styleext": "scss"
-    },
-    "@ionic/angular-toolkit:page": {
-      "styleext": "scss"
-    }
   }
 }
