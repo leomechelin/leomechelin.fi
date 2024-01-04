@@ -19,6 +19,8 @@ export const config: Config = {
     }
   },
   collections: {
+    addTEIClassNames: true,
+    replaceImageAssetsPaths: true,
     enableLegacyIDs: false,
     enableMathJax: false,
     firstTextItem: {
@@ -149,8 +151,9 @@ export const config: Config = {
       }
     },
     manuscripts: {
-      showOpenLegendButton: false,
-      showTitle: false
+      showTitle: false,
+      showNormalizedToggle: true,
+      showOpenLegendButton: false
     },
     topMenu: {
       showAboutButton: true,
