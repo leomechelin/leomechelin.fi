@@ -3,8 +3,7 @@ services:
     image: docker.io/library/nginx:1.25.3
     depends_on:
       - web
-    ports:
-      - 2089:80
+    ports: ${PORT}:80
     restart: unless-stopped
     volumes:
       - browser-static:/static
@@ -13,11 +12,7 @@ services:
     build:
       context: .
       dockerfile: Dockerfile
-    extra_hosts:
-      - "api.sls.fi:172.16.2.136"
-      - "granska-api.sls.fi:172.16.2.136"
-      - "testa-vonwright.sls.fi:172.16.2.136"
-    image: ghcr.io/slsfi/digital-edition-frontend-ng:main
+    image: ${IMAGE}
     restart: unless-stopped
     volumes:
       - browser-static:/digital-edition-frontend-ng/dist/app/browser
