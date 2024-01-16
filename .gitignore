@@ -69,3 +69,9 @@ Thumbs.db
 
 # Dev config files
 /src/assets/config/config-*.ts
+
+# Ignore all .env files
+*.env
+
+# But track the example .env file
+!.env.example
