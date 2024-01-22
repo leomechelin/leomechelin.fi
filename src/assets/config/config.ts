@@ -20,7 +20,7 @@ export const config: Config = {
   },
   collections: {
     addTEIClassNames: false,
-    replaceImageAssetsPaths: true,
+    replaceImageAssetsPaths: false,
     enableLegacyIDs: false,
     enableMathJax: false,
     firstTextItem: {
