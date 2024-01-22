@@ -8,6 +8,27 @@ The format is based on [Keep a Changelog](https://keepachangelog.com/), and this
 
 ## [Unreleased]
 
+### Changed
+
+- Fix indentation in [`nginx.conf`](/nginx.conf).
+- Use `ARG` instructions in [`Dockerfile`](/Dockerfile) to define variables for setting Angular major version and Node image tag of the base image. This makes updating `Dockerfile` clearer as the Angular major version has to be changed in the file when the Angular major version of the app is updated.
+- Update Angular to 17.1.0.
+- Update htmlparser2 to 9.1.0.
+- Update marked to 11.1.1 and remove @types/marked. Move markdown parsing to function in MarkdownContentService.
+- Update zone.js to 0.14.3.
+- Moved @angular/compiler from devDependencies to dependencies (like in fresh Angular 17 apps).
+- Update typescript to 5.3.3.
+- Update @types/node to 20.11.5.
+- Update browser-sync to 3.0.2.
+- Update jasmine-core to 5.1.1 and @types/jasmine to 5.1.4.
+
+### Removed
+
+- @angular-eslint from devDependencies.
+- jasmine-spec-reporter from devDependencies.
+- karma-coverage-istanbul-reporter from devDependencies.
+- ts-node from devDependencies.
+
 
 
 ## [1.2.1] – 2024-01-16
