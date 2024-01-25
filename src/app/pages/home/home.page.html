@@ -25,7 +25,7 @@
 
   <div class="text-content">
     <div class="site-presentation">
-      <div class="markdown" [innerHTML]="descriptionText$ | async"></div>
+      <div class="markdown" [innerHTML]="(descriptionText$ | async) | trustHtml"></div>"></div>
     </div>
 
     <div *ngIf="showSearchbar" class="search-bar-wrapper">
@@ -51,6 +51,6 @@
       <content-grid></content-grid>
     </div>
 
-    <footer *ngIf="showFooter" class="footer markdown" [innerHTML]="footerText$ | async"></footer>
+    <footer *ngIf="showFooter" class="footer markdown" [innerHTML]="(footerText$ | async) | trustHtml"></footer>
   </div>
 </ion-content>
