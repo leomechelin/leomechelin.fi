@@ -75,3 +75,7 @@ Thumbs.db
 
 # But track the example .env file
 !.env.example
+
+# Static html files
+/src/static-html/collection-toc/*
+!/src/static-html/collection-toc/.gitkeep

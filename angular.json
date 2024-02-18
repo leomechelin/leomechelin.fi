@@ -43,6 +43,7 @@
               "src/sitemap.txt",
               "src/google844802f6a02426b4.html",
               "src/googleb3171ee045c0e984.html",
+              "src/static-html/",
               "src/assets",
               {
                 "glob": "**/*",

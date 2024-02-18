@@ -16,6 +16,27 @@ export const config: Config = {
       multilingualCollectionTableOfContents: true,
       multilingualReadingTextLanguages: ["sv", "fi"],
       multilingualNamedEntityData: true
+    },
+    enableRouterLoadingBar: true,
+    openGraphMetaTags: {
+      enabled: true,
+      image: {
+        sv: {
+          altText: "alt-text",
+          URL: "assets/images/home-page-banner.jpg"
+        },
+        fi: {
+          altText: "alt-teksti",
+          URL: "assets/images/home-page-banner.jpg"
+        }
+      }
+    },
+    prebuild: {
+      sitemap: true,
+      staticCollectionMenus: true
+    },
+    ssr: {
+      collectionSideMenu: false
     }
   },
   collections: {
@@ -50,8 +71,20 @@ export const config: Config = {
           sv: "Kollage: Leo Mechelin fotograferad cirka 1900–1905. Som bakgrund Statsrådsborgen samt Mechelins manuskript till verket Précis du droit public du grand-duché de Finlande från 1886.",
           fi: "Kollaasi: Leo Mechelin valokuvattuna noin 1900–1905. Taustalla Valtioneuvoston linna sekä Mechelinin käsikirjoitus teokseen Précis du droit public du grand-duché de Finlande vuodelta 1886."
         },
+        intrinsicSize: {
+          height: null,
+          width: null
+        },
         orientationPortrait: false,
+        alternateSources: [],
         URL: "../../assets/images/Leo_Mechelin.jpg"
+      },
+      portraitOrientationSettings: {
+        imagePlacement: {
+          onRight: false,
+          squareCroppedVerticalOffset: "10%"
+        },
+        siteTitleOnImageOnSmallScreens: false
       },
       showContentGrid: false,
       showFooter: true,
