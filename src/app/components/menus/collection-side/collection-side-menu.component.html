@@ -60,9 +60,7 @@
         <span class="label" i18n="@@CollectionIntroduction.Introduction">Inledning</span>
       </a>
     </li>
-    @defer {
-      <ng-container *ngTemplateOutlet="recursiveMenu; context: {$implicit: collectionMenu}"/>
-    }
+    <ng-container *ngTemplateOutlet="recursiveMenu; context: {$implicit: collectionMenu}"/>
   </ul>
 </ng-container>
 
