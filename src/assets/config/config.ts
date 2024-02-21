@@ -17,20 +17,6 @@ export const config: Config = {
       multilingualReadingTextLanguages: ["sv", "fi"],
       multilingualNamedEntityData: true
     },
-    enableRouterLoadingBar: true,
-    openGraphMetaTags: {
-      enabled: true,
-      image: {
-        sv: {
-          altText: "alt-text",
-          URL: "assets/images/home-page-banner.jpg"
-        },
-        fi: {
-          altText: "alt-teksti",
-          URL: "assets/images/home-page-banner.jpg"
-        }
-      }
-    },
     prebuild: {
       sitemap: true,
       staticCollectionMenus: true
@@ -72,19 +58,51 @@ export const config: Config = {
           fi: "Kollaasi: Leo Mechelin valokuvattuna noin 1900–1905. Taustalla Valtioneuvoston linna sekä Mechelinin käsikirjoitus teokseen Précis du droit public du grand-duché de Finlande vuodelta 1886."
         },
         intrinsicSize: {
-          height: null,
-          width: null
+          height: 1498,
+          width: 5000
         },
         orientationPortrait: false,
-        alternateSources: [],
-        URL: "../../assets/images/Leo_Mechelin.jpg"
-      },
-      portraitOrientationSettings: {
-        imagePlacement: {
-          onRight: false,
-          squareCroppedVerticalOffset: "10%"
-        },
-        siteTitleOnImageOnSmallScreens: false
+        alternateSources: [
+          {
+            media: "(max-height: 720px)",
+            srcset: "assets/images/Leo_Mechelin_1699x509.avif 1699w",
+            type: "image/avif"
+          },
+          {
+            media: "(max-height: 720px)",
+            srcset: "assets/images/Leo_Mechelin_1699x509.jpg 1699w",
+            type: "image/jpeg"
+          },
+          {
+            media: "(max-height: 1080px)",
+            srcset: "assets/images/Leo_Mechelin_2300x689.avif 2300w",
+            type: "image/avif"
+          },
+          {
+            media: "(max-height: 1080px)",
+            srcset: "assets/images/Leo_Mechelin_2300x689.jpg 2300w",
+            type: "image/jpeg"
+          },
+          {
+            media: "(max-height: 1440px)",
+            srcset: "assets/images/Leo_Mechelin_3501x1049.avif 3501w",
+            type: "image/avif"
+          },
+          {
+            media: "(max-height: 1440px)",
+            srcset: "assets/images/Leo_Mechelin_3501x1049.jpg 3501w",
+            type: "image/jpeg"
+          },
+          {
+            srcset: "assets/images/Leo_Mechelin_5000x1498.avif 5000w",
+            type: "image/avif"
+          },
+          {
+            srcset: "assets/images/Leo_Mechelin_5000x1498.jpg 5000w",
+            type: "image/jpeg"
+          }
+        ],
+        URL: "assets/images/Leo_Mechelin_5000x1498.jpg"
       },
       showContentGrid: false,
       showFooter: true,
