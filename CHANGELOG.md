@@ -8,6 +8,25 @@ The format is based on [Keep a Changelog](https://keepachangelog.com/), and this
 
 ## [Unreleased]
 
+### Changed
+
+- Replace deprecated `browserTarget` with `buildTarget` in `extract-i18n` options in `angular.json`.
+- Update `nginx` to 1.25.4.
+- Deps: update `@angular` to 17.3.2.
+- Deps: update `@ionic` to 7.8.2.
+- Deps: update `express` to 4.19.2.
+- Deps: update `ionicons` to 7.3.1.
+- Deps: update `marked` to 12.0.1.
+- Deps: update `@types/node` to 20.11.30.
+- Deps: update `ng-extract-i18n-merge` to 2.11.1.
+- Deps: update `typescript` to 5.4.3.
+
+### Fixed
+
+- Link-elements added to the DOM using a custom renderer in the document head service are cleaned up when the service is destroyed. This fixes a potential memory leak in the SSR-app.
+- Return values of the RxJS `catchError` function.
+- Ensure cleanup of event listeners in the draggable-image directive.
+
 
 
 ## [1.3.2] – 2024-02-29
@@ -242,7 +261,7 @@ siteLogoDimensions: {
 
 
 
-[unreleased]: https://github.com/slsfi/digital-edition-frontend-ng/compare/1.3.1...HEAD
+[unreleased]: https://github.com/slsfi/digital-edition-frontend-ng/compare/1.3.2...HEAD
 [1.3.2]: https://github.com/slsfi/digital-edition-frontend-ng/compare/1.3.1...1.3.2
 [1.3.1]: https://github.com/slsfi/digital-edition-frontend-ng/compare/1.3.0...1.3.1
 [1.3.0]: https://github.com/slsfi/digital-edition-frontend-ng/compare/1.2.3...1.3.0
